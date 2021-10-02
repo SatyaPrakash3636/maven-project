@@ -3,7 +3,7 @@
 echo "**************************************"
 echo "******* Pushing Docker Image *********"
 echo "**************************************"
-
+DOCKER_USER=satyaprakash3636
 IMAGE="maven-project"
 echo
 echo "******** Login to Docker Hub *********"
