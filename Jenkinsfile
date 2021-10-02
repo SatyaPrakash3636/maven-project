@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-	DOCKER_USER = credentials(docker_user)
+	DOCKER_USER = $docker_user
 	DOCKER_PASS = credentials(docker_pass)
     }
     stages {
