@@ -3,7 +3,7 @@ pipeline {
 
     environment {
 	DOCKER_USER = '$docker_user'
-	DOCKER_PASS = credentials(docker_pass)
+	DOCKER_PASS = credentials('docker_pass')
     }
     stages {
         stage('Build') {
