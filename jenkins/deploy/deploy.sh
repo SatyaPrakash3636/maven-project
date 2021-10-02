@@ -4,6 +4,7 @@ echo "************************************************"
 echo "****** Deploying Docker Image to Remote ********"
 echo "************************************************"
 
+DOCKER_USER=satyaprakash3636
 echo mavan-project > ./.auth
 echo $BUILD_TAG >> ./.auth
 echo $DOCKER_USER >> ./.auth
