@@ -5,7 +5,7 @@ echo "****** Deploying Docker Image to Remote ********"
 echo "************************************************"
 
 DOCKER_USER=admin
-echo mavan-project > ./.auth
+echo maven-project > ./.auth
 echo $BUILD_TAG >> ./.auth
 echo $DOCKER_USER >> ./.auth
 echo $DOCKER_PASS >> ./.auth
