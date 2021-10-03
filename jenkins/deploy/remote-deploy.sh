@@ -7,4 +7,4 @@ export DOC_PASS=$(sed -n '4p' /tmp/.auth)
 export NEXUS_URL="localhost:8123"
 docker login -u $DOC_USR -p $DOC_PASS $NEXUS_URL
 docker pull $IMAGE:$BUILD_TAG
-docker-compose up -d
+cd && docker-compose up -d
