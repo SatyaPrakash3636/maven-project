@@ -10,7 +10,6 @@ echo
 echo "******** Login to Nexus Repo *********"
 echo
 docker login -u admin -p $DOCKER_PASS $NEXUS_URL
-docker push localhost:8123/maven-project:jenkins-pipeline-maven-remote-16
 echo
 
 echo "******* Tagging to Docker Hub ********"
