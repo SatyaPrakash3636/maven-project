@@ -12,10 +12,10 @@ echo
 docker login -u admin -p $DOCKER_PASS $NEXUS_URL
 echo
 
-echo "******* Tagging to Docker Hub ********"
+echo "******* Tagging to Docker Image ********"
 echo
 docker tag $IMAGE:$BUILD_TAG $NEXUS_URL/$IMAGE:$BUILD_TAG
 echo
-echo "******** Pushing to Docker Hub *******"
+echo "******** Pushing to Nexus Repo *******"
 echo
 docker push $NEXUS_URL/$IMAGE:$BUILD_TAG
